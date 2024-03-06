@@ -5,6 +5,7 @@ import AnimatedLetters from '../AnimatedLetters'
 import LogoTitle from '../../assets/images/logo-s.png'
 import Logo from './Logo'
 import './index.scss'
+import hkvPic from '../../assets/images/hkv.jpg'
 
 const Home = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
@@ -67,6 +68,20 @@ const Home = () => {
           </Link>
         </div>
         <Logo />
+      </div>
+      <div className="profile-pic-container">
+        <img
+          className="solid-logo"
+          src={hkvPic}
+          style={{
+            height: '70%',
+            position: 'fixed',
+            top: '10%',
+            left: '60%',
+            borderRadius: '50%',
+          }}
+          alt="My profile pic"
+        />
       </div>
 
       <Loader type="pacman" />
